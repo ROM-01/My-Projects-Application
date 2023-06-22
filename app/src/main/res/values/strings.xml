@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Projects</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Age in Minutes</string>
+    <string name="calculate_your_age">CALCULATE YOUR</string>
+    <string name="in_minutes">IN MINUTES</string>
+    <string name="select_date">Select Your Birth Date</string>
+    <string name="_05_21_2023">05/21/2023</string>
+    <string name="selected_date">Selected Date:</string>
+    <string name="_140000000">140000000</string>
+    <string name="selected_date_two">Age In Minutes:</string>
+    <string name="age">AGE</string>
+</resources>

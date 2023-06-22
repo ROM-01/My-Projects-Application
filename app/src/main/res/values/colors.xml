@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blacklighter">#020810</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Red">#9E0404</color>
+    <color name="darkRed">#7A0000</color>
+    <color name="salmon">#FF9B71</color>
+    <color name="limelight">#c7f9cc</color>
+    <color name="limegreener">#80ed99</color>
+    <color name="greenish">#4EFFB2</color>
+    <color name="blueishgreen">#05B197</color>
+    <color name="bluish">#22577a</color>
+    <color name="lightpink">#FFE6FC</color>
+
+    <!--display project -->
+    <color name="colorPrimary">#3d95d0</color>
+    <color name="colorPrimaryDark">#489855</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--text color-->
+    <color name="textColor">#273d52</color>
+    <color name="headerColor">#145795</color>
+
+    <!-- gradient color -->
+    <color name="startColor">#490155</color>
+    <color name="endColor">#F3AEFF</color>
+    <color name="centerColor">#B102CF</color>
+    <color name="userRow">#B845CC</color>
+
+    <!-- icon color -->
+    <color name="iconColor">#145798</color>
+</resources>
