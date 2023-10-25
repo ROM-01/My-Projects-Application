@@ -7,13 +7,26 @@
     android:background="@color/blacklighter"
     tools:context=".ClickCount">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.791"
+        app:srcCompat="@drawable/pngaaa_com_3552940" />
+
     <TextView
         android:id="@+id/countTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="34sp"
-        android:textStyle="bold"
         android:textColor="@color/white"
+        android:textSize="34sp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -28,44 +41,60 @@
         android:text="Click Me"
         android:textColor="@color/white"
         android:textSize="30sp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.643" />
 
     <TextView
         android:id="@+id/txtView"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="317dp"
+        android:layout_height="166dp"
+        android:background="@color/darkRed"
+        android:padding="15dp"
         android:text="Welcome\! \n Click to start counting."
         android:textAlignment="center"
-        android:padding="15dp"
         android:textColor="@color/white"
-        android:background="@color/darkRed"
         android:textSize="35sp"
+        android:layout_marginBottom="70dp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/countTxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.768" />
+        app:layout_constraintVertical_bias="0.943" />
 
     <Button
         android:id="@+id/buttonPage1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
         android:backgroundTint="@color/darkRed"
         android:text="Next Project"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.912" />
+
+    <Button
+        android:id="@+id/returnBtn1"
+        android:layout_width="149dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/darkRed"
+        android:text="Return"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -96,8 +96,20 @@
 
     <Button
         android:id="@+id/buttonPage2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/blueishgreen"
+        android:textSize="20sp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/buttonPage3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blueishgreen"
+        android:textSize="20sp"
+        android:text="Back" />
 
 </LinearLayout>

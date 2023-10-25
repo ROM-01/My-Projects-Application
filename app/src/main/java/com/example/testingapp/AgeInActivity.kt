@@ -22,6 +22,7 @@ class AgeInActivity : AppCompatActivity() {
 
         val btnDatePick: Button = findViewById(R.id.btnDatePick)
         val page2: Button = findViewById(R.id.buttonPage2)
+        val backPage: Button = findViewById(R.id.buttonPage3)
         tvSelectedDate = findViewById(R.id.tvSelectedDate)
         tvAgeInMinutes = findViewById(R.id.tvAgeInMinutes)
 
@@ -31,7 +32,12 @@ class AgeInActivity : AppCompatActivity() {
         }
 
         page2.setOnClickListener(){
-            var intent = Intent(this, ProjectDisplay::class.java)
+            var intent = Intent(this, MyCalculator::class.java)
+            startActivity(intent)
+        }
+
+        backPage.setOnClickListener(){
+            var intent = Intent(this, ClickCount::class.java)
             startActivity(intent)
         }
     }

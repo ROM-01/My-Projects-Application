@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider
 class ClickCount : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     //the onCreate function is a method because it's within a class
-    private lateinit var viewModel:ClickCountViewModel
+    private lateinit var viewModel: ClickCountViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.click_count)
@@ -23,6 +23,7 @@ class ClickCount : AppCompatActivity() {
         val viewCount = findViewById<TextView>(R.id.countTxt)
         val greet = findViewById<TextView>(R.id.txtView)
         val page1 = findViewById<Button>(R.id.buttonPage1)
+        val return1 = findViewById<Button>(R.id.returnBtn1)
 
 
         var timesClicked = 0
@@ -43,5 +44,13 @@ class ClickCount : AppCompatActivity() {
             val intent = Intent(this, AgeInActivity::class.java)
             startActivity(intent)
         }
+
+        return1.setOnClickListener {
+            val intent = Intent(this, ProjectDisplay::class.java)
+            startActivity(intent)
+        }
+
     }
+
 }
+
