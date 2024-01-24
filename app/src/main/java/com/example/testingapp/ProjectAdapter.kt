@@ -4,18 +4,16 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ExpandableListView.OnChildClickListener
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
-class UsersAdapter(private var clickListener: ClickListener): RecyclerView.Adapter<UsersAdapter.ViewHolder>() {
+class ProjectAdapter(private var clickListener: ClickListener): RecyclerView.Adapter<ProjectAdapter.ViewHolder>() {
 
-   private var userModelList: List<UserModel> = arrayListOf();
+   private var projectModelList: List<ProjectModel> = arrayListOf();
    private lateinit var context: Context;
 
-    public fun setData(userModel: List<UserModel>){
-        this.userModelList = userModel
+    public fun setData(userModel: List<ProjectModel>){
+        this.projectModelList = userModel
         notifyDataSetChanged()
     }
 
@@ -26,18 +24,18 @@ class UsersAdapter(private var clickListener: ClickListener): RecyclerView.Adapt
     }
 
     override fun getItemCount(): Int {
-        return userModelList.size
+        return projectModelList.size
     }
 
     interface ClickListener{
-        fun clickedItem(userModel: UserModel)
+        fun clickedItem(userModel: ProjectModel)
     }
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        val userModel = userModelList[position]
-        val username = userModel.username;
+        val userModel = projectModelList[position]
+        val username = userModel.projectName;
         val prefix = username.substring(0,1)
 
         holder.tvUsername.text = username;
@@ -59,4 +57,7 @@ class UsersAdapter(private var clickListener: ClickListener): RecyclerView.Adapt
         private const val AGE_IN_MINUTES = 1
         private const val CALCULATOR = 2
     }
+
+
+
 }

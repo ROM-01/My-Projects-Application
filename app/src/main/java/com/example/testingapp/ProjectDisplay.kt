@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class ProjectDisplay : AppCompatActivity(), UsersAdapter.ClickListener {
-    private lateinit var usersAdapter: UsersAdapter
+class ProjectDisplay : AppCompatActivity(), ProjectAdapter.ClickListener {
+    private lateinit var projectAdapter: ProjectAdapter
     private lateinit var rvUsers: RecyclerView
 
 
@@ -26,18 +26,18 @@ class ProjectDisplay : AppCompatActivity(), UsersAdapter.ClickListener {
     private fun initRecyclerView(){
         rvUsers.layoutManager = LinearLayoutManager(this)
         rvUsers.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
-        usersAdapter = UsersAdapter(this)
-        rvUsers.adapter = usersAdapter
+        projectAdapter = ProjectAdapter(this)
+        rvUsers.adapter = projectAdapter
         showData()
     }
 
-    private fun populateUsers():List<UserModel>{
+    private fun populateUsers():List<ProjectModel>{
 
-        val userList = ArrayList<UserModel>()
-        userList.add(UserModel("Count Click"))
-        userList.add(UserModel("Age In Minutes"))
-        userList.add(UserModel("Calculator"))
-        userList.add(UserModel(" "))
+        val userList = ArrayList<ProjectModel>()
+        userList.add(ProjectModel("Count Click"))
+        userList.add(ProjectModel("Age In Minutes"))
+        userList.add(ProjectModel("Calculator"))
+        userList.add(ProjectModel(" "))
 
         //var element = userList.get(0)
 
@@ -45,12 +45,12 @@ class ProjectDisplay : AppCompatActivity(), UsersAdapter.ClickListener {
     }
 
     private fun showData(){
-        usersAdapter.setData(populateUsers())
+        projectAdapter.setData(populateUsers())
     }
 
-    override fun clickedItem(userModel: UserModel) {
+    override fun clickedItem(userModel: ProjectModel) {
 
-        startActivity(Intent(this, ClickCount::class.java).putExtra("countClick", userModel.username))
+        startActivity(Intent(this, ClickCount::class.java).putExtra("countClick", userModel.projectName))
         
 
     }
